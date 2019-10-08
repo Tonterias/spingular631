@@ -1,0 +1,11 @@
+id;creation_date;image;image_content_type;appuser_id
+1;2019-10-07T15:40:06;../fake-data/blob/hipster.png;image/png;1
+2;2019-10-08T01:14:53;../fake-data/blob/hipster.png;image/png;2
+3;2019-10-07T20:55:05;../fake-data/blob/hipster.png;image/png;3
+4;2019-10-07T17:23:52;../fake-data/blob/hipster.png;image/png;4
+5;2019-10-08T00:08:18;../fake-data/blob/hipster.png;image/png;5
+6;2019-10-08T04:21:01;../fake-data/blob/hipster.png;image/png;6
+7;2019-10-07T12:34:03;../fake-data/blob/hipster.png;image/png;7
+8;2019-10-08T02:23:37;../fake-data/blob/hipster.png;image/png;8
+9;2019-10-08T07:39:03;../fake-data/blob/hipster.png;image/png;9
+10;2019-10-07T23:53:35;../fake-data/blob/hipster.png;image/png;10

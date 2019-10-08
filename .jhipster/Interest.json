@@ -1,0 +1,35 @@
+{
+    "name": "Interest",
+    "fields": [
+        {
+            "fieldName": "interestName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "minlength",
+                "maxlength",
+                "required"
+            ],
+            "fieldValidateRulesMinlength": 2,
+            "fieldValidateRulesMaxlength": 40
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "appuser",
+            "otherEntityRelationshipName": "interest",
+            "relationshipName": "appuser",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20191008101907",
+    "entityTableName": "interest",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

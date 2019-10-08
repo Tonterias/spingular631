@@ -1,0 +1,11 @@
+id;creation_date;message_text;is_delivered
+1;2019-10-07T21:08:18;microchip;true
+2;2019-10-07T11:53:21;invoice;true
+3;2019-10-07T16:36:37;Jamaica Credit Card Account;false
+4;2019-10-08T09:10:28;Louisiana;false
+5;2019-10-07T16:07:53;Garden;false
+6;2019-10-08T08:06:59;Small;false
+7;2019-10-07T13:47:19;Colombian Peso Unidad de Valor Real Bridge Handmade;false
+8;2019-10-07T14:57:14;e-business Light;true
+9;2019-10-08T00:45:20;Personal Loan Account;true
+10;2019-10-07T13:02:22;explicit;false
