@@ -25,7 +25,6 @@ public class NotificationDTO implements Serializable {
 
     private Boolean isDelivered;
 
-
     private Long appuserId;
 
     public Long getId() {

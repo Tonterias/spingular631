@@ -78,8 +78,13 @@ public class AppprofileDTO implements Serializable {
 
     private Boolean pet;
 
-
     private Long appuserId;
+
+    private Long userId;
+
+    private String userFirstName;
+
+    private String userLastName;   
 
     public Long getId() {
         return id;
@@ -280,8 +285,32 @@ public class AppprofileDTO implements Serializable {
     public void setAppuserId(Long appuserId) {
         this.appuserId = appuserId;
     }
+    
+    public Long getUserId() {
+		return userId;
+	}
 
-    @Override
+	public void setUserId(Long userId) {
+		this.userId = userId;
+	}
+
+	public String getUserFirstName() {
+		return userFirstName;
+	}
+
+	public void setUserFirstName(String userFirstName) {
+		this.userFirstName = userFirstName;
+	}
+
+	public String getUserLastName() {
+		return userLastName;
+	}
+
+	public void setUserLastName(String userLastName) {
+		this.userLastName = userLastName;
+	}
+
+	@Override
     public boolean equals(Object o) {
         if (this == o) {
             return true;
@@ -330,6 +359,9 @@ public class AppprofileDTO implements Serializable {
             ", futureChildren='" + getFutureChildren() + "'" +
             ", pet='" + isPet() + "'" +
             ", appuser=" + getAppuserId() +
+            ", user=" + getUserId() +
+            ", userFirstName="+ userFirstName +
+            ", userLastName=" + userLastName +
             "}";
     }
 }

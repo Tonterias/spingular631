@@ -8,10 +8,10 @@ import org.mapstruct.*;
 /**
  * Mapper for the entity {@link Notification} and its DTO {@link NotificationDTO}.
  */
-@Mapper(componentModel = "spring", uses = {AppuserMapper.class})
+@Mapper(componentModel = "spring", uses = {AppuserMapper.class, UserMapper.class})
 public interface NotificationMapper extends EntityMapper<NotificationDTO, Notification> {
 
-    @Mapping(source = "appuser.id", target = "appuserId")
+    @Mapping(source = "appuser.user.id", target = "appuserId")
     NotificationDTO toDto(Notification notification);
 
     @Mapping(source = "appuserId", target = "appuser")

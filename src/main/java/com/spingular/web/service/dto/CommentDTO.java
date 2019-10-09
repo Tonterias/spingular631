@@ -24,6 +24,10 @@ public class CommentDTO implements Serializable {
     private Long appuserId;
 
     private Long postId;
+    
+    private String commenterFirstName;
+    
+    private String commenterLastName;
 
     public Long getId() {
         return id;
@@ -73,7 +77,23 @@ public class CommentDTO implements Serializable {
         this.postId = postId;
     }
 
-    @Override
+    public String getCommenterFirstName() {
+		return commenterFirstName;
+	}
+
+	public void setCommenterFirstName(String commenterFirstName) {
+		this.commenterFirstName = commenterFirstName;
+	}
+
+	public String getCommenterLastName() {
+		return commenterLastName;
+	}
+
+	public void setCommenterLastName(String commenterLastName) {
+		this.commenterLastName = commenterLastName;
+	}
+
+	@Override
     public boolean equals(Object o) {
         if (this == o) {
             return true;
@@ -103,6 +123,8 @@ public class CommentDTO implements Serializable {
             ", isOffensive='" + isIsOffensive() + "'" +
             ", appuser=" + getAppuserId() +
             ", post=" + getPostId() +
+            ", commenterFirstName=" + getCommenterFirstName() +
+            ", commenterLastName=" + getCommenterLastName() +
             "}";
     }
 }
